@@ -1,0 +1,24 @@
+# Mac OS X Finder and whatnot
+.DS_Store
+
+
+# Sparkle distribution Private Key (Don't check me in!)
+dsa_priv.pem
+
+
+# Other source repository archive directories (protects when importing)
+.hg
+.svn
+CVS
+
+
+# automatic backup files
+*~.nib
+*.swp
+*~
+*(Autosaved).rtfd/
+Backup[ ]of[ ]*.pages/
+Backup[ ]of[ ]*.key/
+Backup[ ]of[ ]*.numbers/
+/Icon.png
+Thumbs.db

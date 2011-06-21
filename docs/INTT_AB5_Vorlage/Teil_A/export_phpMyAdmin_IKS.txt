@@ -1,0 +1,38 @@
+-- phpMyAdmin SQL Dump
+-- version 2.11.3deb1ubuntu1.1
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Erstellungszeit: 17. Juni 2009 um 18:40
+-- Server Version: 5.0.51
+-- PHP-Version: 5.2.4-2ubuntu5.5
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Datenbank: `IKS`
+--
+CREATE DATABASE `IKS` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `IKS`;
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `lieferungen`
+--
+
+CREATE TABLE IF NOT EXISTS `lieferungen` (
+  `lieferung_id` bigint(20) NOT NULL auto_increment,
+  `lieferanten_id` bigint(20) NOT NULL,
+  `lieferzeit` varchar(30) NOT NULL,
+  `produktionsdatum` date NOT NULL,
+  `QM1` int(11) NOT NULL,
+  `QM2` int(11) NOT NULL,
+  `QM3` int(11) NOT NULL,
+  `mitarbeiter_id` bigint(20) NOT NULL,
+  PRIMARY KEY  (`lieferung_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Daten für Tabelle `lieferungen`
+--
